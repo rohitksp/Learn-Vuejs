@@ -1,11 +1,12 @@
 <template>
-    <button :type="type" :class="mode"></button>
+  <button :class="mode">
     <slot></slot>
+  </button>
 </template>
 
 <script>
 export default {
-    props: ['type', 'mode']
+    props: ['mode']
 }
 </script>
 
@@ -13,7 +14,7 @@ export default {
 button {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
-  background-color: #f5f5f5;
+  background-color: #3a0061;
   border: 1px solid #3a0061;
   color: white;
   cursor: pointer;
@@ -33,6 +34,6 @@ button:active {
 
 .flat:hover,
 .flat:active {
-  background-color: #996cb8;
+  background-color: #edd2ff;
 }
 </style>
