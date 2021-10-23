@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../components/Home.vue";
 import Login from "../components/Login.vue";
-import SignUp from "../components/SignUp.vue";
+import Register from "../components/Register.vue";
 
 Vue.use(VueRouter);
 
@@ -10,23 +10,23 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: Home
+    component: Home,
   },
   {
     path: "/login",
     name: "login",
-    component: Login
+    component: Login,
   },
   {
     path: "/signup",
-    name: "signup",
-    component: SignUp
-  }
+    name: "register",
+    component: Register,
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
-  routes
+  routes,
 });
 
 export default router;

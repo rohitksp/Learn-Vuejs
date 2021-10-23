@@ -12,7 +12,7 @@
       <button type="submit">Login</button>
     </form>
     <br />
-    <router-link to="/signup">Sign up</router-link>|
+    <router-link to="/signup">Register</router-link>|
     <router-link to="/">Home</router-link>
   </div>
 </template>
@@ -37,9 +37,9 @@ export default {
         .then((response) => {
           this.data = response.data;
           if (this.data !== []) {
-            console.log("signin first")
+            console.log("register first");
           } else {
-            console.log("logged in")
+            console.log("logged in");
           }
           /* ? window.alert("Sign in first")
             : window.alert("logged in"); */
